@@ -1,0 +1,42 @@
+<md:EntityDescriptor entityID="https://denominazione.ente.it/sp"
+ID="_c75b48d19e23e90be40c4ab5eb331e7c4f04f73fb5" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance">
+<ds:Signature>……… </ds:Signature>
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+WantAssertionsSigned="true">
+ <md:KeyDescriptor use="signing">
+ <ds:KeyInfo>
+ <ds:X509Data>
+<ds:X509Certificate> 0kgUGll….. VBAs</ds:X509Certificate> 
+ </ds:X509Data>
+ </ds:KeyInfo>
+ </md:KeyDescriptor>
+ <md:KeyDescriptor use="signing">
+ <ds:KeyInfo>
+ <ds:X509Data>
+ <ds:X509Certificate> FZaz…….Mw8T</ds:X509Certificate> 
+ </ds:X509Data>
+ </ds:KeyInfo>
+ </md:KeyDescriptor>
+ <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+Location="https://denominazione.ente.it/diparttimento1/singleLogoutService"/> 
+ <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameidformat:transient</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+Location="https://denominazione.ente.it/nodo1/assertionConsumerService/POST" index="0"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+Location="https://denominazione.ente.it/nodo1/assertionConsumerService/redirect" index="1"/>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+Location="https://denominazione.ente.it/nodo2/assertionConsumerService " index="2"/> 
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings: HTTP-Redirect"
+Location="https://denominazione.ente.it/nodo3/assertionConsumerService " index="3"/>
+ <md:AttributeConsumingService index="0">
+ <md:ServiceName xml:lang="it">serviziClasse1</md:ServiceName>
+ <md:RequestedAttribute Name="familyName"/>
+ <md:RequestedAttribute Name="name"/>
+ <md:RequestedAttribute Name="gender"/>
+ <md:RequestedAttribute Name="dateOfBirth"/>
+ </md:AttributeConsumingService>
+ <md:AttributeConsumingService index="1">
+ <md:ServiceName xml:lang="it"> serviziClasse2</md:ServiceName>
+ <md:RequestedAttribute Name="fiscalNumber"/>
+ </md:AttributeConsumingService>
