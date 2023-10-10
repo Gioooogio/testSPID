@@ -43,27 +43,6 @@
         <md:OrganizationURL xml:lang="it">https://spid.identityprovider.it</md:OrganizationURL>
     </md:Organization>
     <md:ContactPerson contactType="billing">
-        <md:Extensions>
-            <fpa:CessionarioCommittente>
-            <fpa:DatiAnagrafici>
-            <fpa:IdFiscaleIVA>
-                <fpa:IdPaese>IT</fpa:IdPaese>
-                <fpa:IdCodice>983745349857</fpa:IdCodice>
-            </fpa:IdFiscaleIVA>
-            <fpa:Anagrafica>
-                <fpa:Denominazione>Destinatario Fatturazione</fpa:Denominazione>
-            </fpa:Anagrafica>
-            </fpa:DatiAnagrafici>
-            <fpa:Sede>
-                <fpa:Indirizzo>via tante cose</fpa:Indirizzo>
-                <fpa:NumeroCivico>12</fpa:NumeroCivico>
-                <fpa:CAP>87100</fpa:CAP>
-                <fpa:Comune>Cosenza</fpa:Comune>
-                <fpa:Provincia>CS</fpa:Provincia>
-                <fpa:Nazione>IT</fpa:Nazione>
-            </fpa:Sede>
-            </fpa:CessionarioCommittente>
-        </md:Extensions>
         <md:Company>example s.p.a.</md:Company>
         <md:EmailAddress>info@example.org</md:EmailAddress>
         <md:TelephoneNumber>+39 84756344785</md:TelephoneNumber>
