@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
+    <meta charset="utf-8">
     <title>La mia pagina di test</title>
+    <!-- Load spid-button style and font -->
+    <link rel="stylesheet" href="css/spid-sp-access-button.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/spid-sp-access-button.min.js"></script>
+    <!-- Add only if you want to load remotely the idps list -->
+    <script src="./js/spid-idps.js"></script>
 </head>
 <body>
     <h1>TEST</h1>
+
+    <a href="#" class="italia-it-button italia-it-button-size-s button-spid" spid-idp-button="#spid-idp-button-small-get" aria-haspopup="true" aria-expanded="false">
+        <span class="italia-it-button-icon">
+            <img src="img/spid-ico-circle-bb.svg" onerror="this.src='img/spid-ico-circle-bb.png'; this.onerror=null;" alt=""/> 
+        </span>
+        <span class="italia-it-button-text">Entra con SPID</span>
+    </a>
+    <div id="spid-idp-button-small-get" class="spid-idp-button spid-idp-button-tip spid-idp-button-relative">
+        <ul id="spid-idp-list-small-root-get" class="spid-idp-button-menu" aria-labelledby="spid-idp" data-spid-remote>
+            <li><a class="dropdown-item" href="https://www.spid.gov.it">Maggiori informazioni</a></li>
+            <li><a class="dropdown-item" href="https://www.spid.gov.it/richiedi-spid">Non hai SPID?</a></li>
+            <li><a class="dropdown-item" href="https://www.spid.gov.it/serve-aiuto">Serve aiuto?</a></li>
+        </ul> 
+    </div> 
 </body>
 </html>
